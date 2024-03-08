@@ -15,7 +15,8 @@ async def on_ready():
 
 @bot.command()
 async def cek_tugas(ctx):
-    url = 'https://siakad.polinema.ac.id/beranda'
+    # url ='https://slc.polinema.ac.id/spada/'
+    url = 'https://siakad.polinema.ac.id/beranda' 
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
     # Proses parsing tugas dari halaman Siakad
